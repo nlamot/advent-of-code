@@ -10,7 +10,7 @@ import (
 
 func TestDay1Puzzle1(t *testing.T) {
 	file, _ := os.Open("resources/puzzle.txt")
-	input, _ := util.ReadExerciseIntegerInput(file)
+	input, _ := util.ReadExerciseInputInt(file)
 	result, _ := main.CalculateDuoMultiplicationOnSum(input, 2020)
 
 	t.Logf("The result for day 1, star 1 is %v", result)
@@ -18,7 +18,7 @@ func TestDay1Puzzle1(t *testing.T) {
 
 func TestDay1Puzzle2(t *testing.T) {
 	file, _ := os.Open("resources/puzzle.txt")
-	input, _ := util.ReadExerciseIntegerInput(file)
+	input, _ := util.ReadExerciseInputInt(file)
 	result, _ := main.CalculateTrioMultiplicationOnSum(input, 2020)
 
 	t.Logf("The result for day 1, star 2 is %v", result)

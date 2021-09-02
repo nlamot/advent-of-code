@@ -12,7 +12,7 @@ import (
 
 func TestCalculateMultiplicationOnSumWithExample(t *testing.T) {
 	file, _ := os.Open("resources/example.txt")
-	input, _ := util.ReadExerciseIntegerInput(file)
+	input, _ := util.ReadExerciseInputInt(file)
 	resultDuo, errDuo := main.CalculateDuoMultiplicationOnSum(input, 2020)
 	resultTrio, errTrio := main.CalculateTrioMultiplicationOnSum(input, 2020)
 	
@@ -24,7 +24,7 @@ func TestCalculateMultiplicationOnSumWithExample(t *testing.T) {
 
 func TestCalculateMultiplicationOnSumReturnsErrorWhenSumDoesntExist (t *testing.T) {
 	file, _ := os.Open("resources/example.txt")
-	input, _ := util.ReadExerciseIntegerInput(file)
+	input, _ := util.ReadExerciseInputInt(file)
 	resultDuo, errDuo := main.CalculateDuoMultiplicationOnSum(input, 2021)
 	resultTrio, errTrio := main.CalculateTrioMultiplicationOnSum(input, 2021)
 	
